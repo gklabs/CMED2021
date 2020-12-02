@@ -7,10 +7,10 @@ Created on Sun Nov 20 21:21:26 2020
 1. 
 
 Objectives
-- Filter out the drugs (finished)
-- Map sentence ID to the postions of the start and end tokens in the sentence. (working...)
-- Locate mediation's position
-
+- Filter out the medications (finished)
+- Map sentence ID to the postions of the start and end tokens in the sentence. (unfinished)
+- Locate mediation's position (unfinished)
+...
 
 """
 
