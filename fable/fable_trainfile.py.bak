@@ -8,9 +8,9 @@ Objectives:
 
 2. How to run it
 - Make sure you can run fable demo - demo.py under a Linux system or Linux-like system
-- Create file folder "training_build_data" under" the same directory with fable model
+- Create file folder "trainning_build_data" under" the same directory with fable model
 - Make sure all raw text files and annotation files are put under the folder: "input_data" 
-- Run this file under a Linux system or Linux-like system. Output will be generated under folder "training_build_data"
+- Run this file under a Linux system or Linux-like system. Output will be generated under folder "trainning_build_data"
 
 """
 
@@ -23,7 +23,7 @@ def prepareTrainFiles(file):
     """
     Prepare training files by using part of fable code
     Input: Raw medical records
-    Output: prepared files that stored in folder: "\training_build_data"
+    Output: prepared files that stored in folder: "\trainning_build_data"
     """
     
     print("Fable preparing training files...", file)       
@@ -97,7 +97,7 @@ def addBIOlable(files, i):
     trainFile.close() 
 
 fRawPath = './input_data/'     
-fPath = './training_build_data/'
+fPath = './trainning_build_data/'
 
 def main():
     rawlist = glob.glob(fRawPath + '*.txt', recursive = True)        

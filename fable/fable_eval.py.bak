@@ -246,7 +246,7 @@ def predEval_entity(files, currFold):
           
       
 fRawPath = './input_data/'     
-fPath = './training_build_data/'
+fPath = './trainning_build_data/'
 fPredPath = './predict_data/'
   
 f1List_token, recallList_token, precisionList_token = [], [], [] 
