@@ -355,8 +355,8 @@ def fable(fname, flag, currFold):
 #                if sent != '':
 #                    x_tokens_raw.extend(sent.split())
 #            f.close()
-#         
-        content = utils.rawTextPreprocess(fname)  # Yaya Liu add    
+#            
+        content = utils.rawTextPreprocess(fname)  # Yaya Liu add       
         x_tokens_raw = []
         sents = content.split('\n')
         for sent in sents:

@@ -72,9 +72,9 @@ def parse(file):
             line = line.strip()      # strip the last '\n'                
             BIOlabel = line.split('|')[0]
             if BIOlabel != 'NO':
-                #word =  line.split('|')[1]           
-                #s = re.sub(r'[^\w\s]','', word)   # replace all punctuations in the medication names with ''  
-                if BIOlabel.split('-')[1] == 'M': #and len(s) != 0:  # fliter out medications, and the medications are not only consist of punctuations
+                word =  line.split('|')[1]           
+                s = re.sub(r'[^\w\s]','', word)   # replace all punctuations in the medication names with ''  
+                if BIOlabel.split('-')[1] == 'M' and len(s) != 0:  # fliter out medications, and the medications are not only consist of punctuations
                     out.append(line)            
     #print(out)
         

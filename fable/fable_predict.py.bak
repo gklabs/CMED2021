@@ -39,16 +39,7 @@ I-DU|days|1|6
 def predict(file, flag, currFold):     
     print("predicting...", file)
     tokens, labels, sent_index, word_index = fable.fable(file, flag, currFold)  # return 4 lists: tokens, prediction labels, sentence index, word index
-    
-#    print(tokens)
-#    print()
-#    print(labels)
-#    print()
-#    print(sent_index)
-#    print()
-#    print(word_index)   
-#    print()   
-    
+            
     #file_name = file[-10:]             # intend to use split function, but it did not work in linux        
     file_name = file.split('/')[2]
     file_path = os.path.join('./predict_data', file_name)  # create file in "predict_data" folder
